@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'header.dart';
+import 'routes/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primaryColor: const Color.fromRGBO(1, 94, 83, 0.8),
+      ),
       title: 'Flutter App',
-      home: Header(),
+      initialRoute: RouteManager.homePage,
+      routes: RouteManager.routes,
     );
   }
 }

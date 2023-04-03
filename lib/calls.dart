@@ -52,12 +52,6 @@ class Calls extends StatelessWidget {
                             '${DateFormat.MMMd().format(callList[index].dateTime)}, ${DateFormat.jm().format(callList[index].dateTime)}',
                           ),
                         ),
-                        // Container(
-                        //   child: Text(
-                        //     // DateFormat.yMMMEd().format(callList[index].dateTime),
-                        //     DateFormat.jm().format(callList[index].dateTime),
-                        //   ),
-                        // ),
                       ],
                     ),
                     trailing: const Icon(
