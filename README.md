@@ -1,6 +1,7 @@
 # whatsapp
 
-A new Flutter project where I have try to clone Whatsapp.
+A new Flutter project where I have tried to clone Whatsapp. I would gradually add new functionalities.
+Any kind of suggestion is welcomed.
 
 # Snap
 ![1](https://user-images.githubusercontent.com/45789793/229757327-7cbfca8e-f545-4ae5-a80e-0c0b5e1ff9e5.jpg)
