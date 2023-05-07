@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'all_contact.dart';
+import '../view/contact_fab_view.dart';
+import 'custom_widgets/my_icon_button.dart';
 
 class ContactPage extends StatelessWidget {
   const ContactPage({Key? key}) : super(key: key);
@@ -11,18 +12,8 @@ class ContactPage extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(1, 94, 83, 0.9),
         title: const Text('Select Contact'),
         actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.search,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.more_vert,
-            ),
-          ),
+          MyIconButton(icon: Icons.search),
+          MyIconButton(icon: Icons.more_vert),
         ],
       ),
       body: Column(
@@ -32,7 +23,7 @@ class ContactPage extends StatelessWidget {
           myTile('New contact', Icons.person_add),
           myTile('New community', Icons.groups),
           singleLineText('Contacts on WhatsApp'),
-          const AllContact(),
+          const ContactFabView(),
         ],
       ),
     );

@@ -1,9 +1,9 @@
-class ChatList {
+class ChatListUiModel {
   String contact;
   String lastMessage;
   DateTime dateTime;
 
-  ChatList(
+  ChatListUiModel(
       {required this.contact,
       required this.lastMessage,
       required this.dateTime});

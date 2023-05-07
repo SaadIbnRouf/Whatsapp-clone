@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp/calls.dart';
-import 'chats.dart';
-import 'status.dart';
+import 'package:whatsapp/calls_tab.dart';
+import 'chat_tab.dart';
+import 'status_tab.dart';
+import 'custom_widgets/my_icon_button.dart';
 
 class Header extends StatelessWidget {
   const Header({Key? key}) : super(key: key);
@@ -17,24 +18,9 @@ class Header extends StatelessWidget {
             'Whatsapp',
           ),
           actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.camera_alt,
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.search,
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.more_vert,
-              ),
-            ),
+            MyIconButton(icon: Icons.camera_alt),
+            MyIconButton(icon: Icons.search),
+            MyIconButton(icon: Icons.more_vert),
           ],
           bottom: const TabBar(
             tabs: [
@@ -52,9 +38,9 @@ class Header extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            Chats(),
-            Status(),
-            Calls(),
+            ChatTab(),
+            StatusTab(),
+            CallsTab(),
           ],
         ),
       ),

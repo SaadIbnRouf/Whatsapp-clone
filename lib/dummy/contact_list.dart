@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'contactModel.dart';
+import '../models/contact_ui_model.dart';
 
 final List<Contact> contact_list = [
   Contact(title: 'Baby Aunty', status: "Hey I'm using Whatsapp!"),
